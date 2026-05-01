@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Example landing page template with a hero, features, testimonials, pricing, and FAQ."
+    />
+    <title>Nova — Landing Page Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-elevates="true">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="Nova home">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">Nova</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#testimonials">Stories</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 13.2A8.5 8.5 0 0 1 10.8 3a6.5 6.5 0 1 0 10.2 10.2Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <a class="btn btn-ghost" href="#pricing">View pricing</a>
+          <a class="btn btn-primary" href="#get-started">Get started</a>
+        </div>
+
+        <button class="icon-btn mobile-menu-btn" id="menuToggle" type="button" aria-label="Open menu">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav" hidden>
+        <div class="container mobile-nav-inner">
+          <a href="#features">Features</a>
+          <a href="#testimonials">Stories</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <div class="mobile-cta">
+            <a class="btn btn-ghost" href="#pricing">View pricing</a>
+            <a class="btn btn-primary" href="#get-started">Get started</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Ship faster. Look better.</p>
+            <h1>Launch a landing page your users will trust in minutes.</h1>
+            <p class="subhead">
+              Nova is a clean, responsive starter with real sections (features, pricing, FAQ) and
+              delightful details (theme toggle, smooth nav, accessible components).
+            </p>
+            <div class="hero-cta" id="get-started">
+              <a class="btn btn-primary btn-lg" href="#pricing">Start free</a>
+              <a class="btn btn-ghost btn-lg" href="#features">See features</a>
+            </div>
+            <div class="meta-row">
+              <div class="meta-item">
+                <span class="meta-number">99.9%</span>
+                <span class="meta-label">uptime</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-number">2 min</span>
+                <span class="meta-label">setup</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-number">0</span>
+                <span class="meta-label">dependencies</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Product preview">
+            <div class="preview-top">
+              <div class="dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="preview-title">Analytics snapshot</span>
+              <span class="pill">Live</span>
+            </div>
+            <div class="preview-body">
+              <div class="kpi">
+                <div class="kpi-label">Conversion</div>
+                <div class="kpi-value">12.4%</div>
+                <div class="kpi-delta up">+3.1%</div>
+              </div>
+              <div class="chart" aria-hidden="true">
+                <span style="height: 38%"></span>
+                <span style="height: 56%"></span>
+                <span style="height: 44%"></span>
+                <span style="height: 72%"></span>
+                <span style="height: 60%"></span>
+                <span style="height: 84%"></span>
+                <span style="height: 68%"></span>
+              </div>
+              <div class="list">
+                <div class="row">
+                  <span>New users</span>
+                  <strong>1,284</strong>
+                </div>
+                <div class="row">
+                  <span>MRR</span>
+                  <strong>$9,420</strong>
+                </div>
+                <div class="row">
+                  <span>Support SLA</span>
+                  <strong>2h</strong>
+                </div>
+              </div>
+              <div class="preview-footer">
+                <span class="hint">Tip: customize this to match your product.</span>
+                <a class="link" href="#faq">How it works →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container logo-row" aria-label="Trusted by">
+          <span class="logo-label">Trusted by</span>
+          <div class="logos" aria-hidden="true">
+            <span>Atlas</span><span>Juniper</span><span>Helio</span><span>Summit</span><span>Pulse</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Everything you need for a polished first impression.</h2>
+            <p>
+              Designed to be copy/paste friendly with sensible spacing, modern typography, and
+              accessibility baked in.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">⚡</div>
+              <h3>Fast by default</h3>
+              <p>Single-file assets, no build step required. Loads instantly.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">🎯</div>
+              <h3>Clear messaging</h3>
+              <p>Hero, features, stories, pricing, and FAQ to guide decisions.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">🔒</div>
+              <h3>Accessible</h3>
+              <p>Skip link, keyboard-friendly nav, readable contrast, focus rings.</p>
+            </article>
+          </div>
+
+          <div class="split">
+            <div class="split-copy">
+              <h3>Make changes in one place</h3>
+              <p>
+                Tweak colors, spacing, and radii with a few CSS variables. Add your logo, replace
+                the copy, and ship.
+              </p>
+              <ul class="checklist">
+                <li><span aria-hidden="true">✓</span> Responsive layout</li>
+                <li><span aria-hidden="true">✓</span> Dark mode toggle</li>
+                <li><span aria-hidden="true">✓</span> Smooth anchor scrolling</li>
+              </ul>
+              <a class="btn btn-primary" href="#pricing">Pick a plan</a>
+            </div>
+            <div class="split-panel">
+              <div class="code-card" role="region" aria-label="CSS variables preview">
+                <pre><code>:root {
+  --bg: #0b1020;
+  --card: rgba(255,255,255,.08);
+  --text: rgba(255,255,255,.92);
+  --accent: #7c3aed;
+}</code></pre>
+              </div>
+              <div class="mini-grid">
+                <div class="mini-card">
+                  <strong>Lead capture</strong>
+                  <span class="muted">Form section included</span>
+                </div>
+                <div class="mini-card">
+                  <strong>Pricing cards</strong>
+                  <span class="muted">With “Popular” badge</span>
+                </div>
+                <div class="mini-card">
+                  <strong>FAQ accordion</strong>
+                  <span class="muted">Native details/summary</span>
+                </div>
+                <div class="mini-card">
+                  <strong>Mobile menu</strong>
+                  <span class="muted">No framework needed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Teams use Nova to launch and iterate.</h2>
+            <p>Short, believable testimonials that you can swap for real quotes.</p>
+          </div>
+
+          <div class="grid-3">
+            <figure class="quote">
+              <blockquote>
+                “We went from a blank page to a complete marketing site in an afternoon.”
+              </blockquote>
+              <figcaption>
+                <span class="avatar" aria-hidden="true">AL</span>
+                <div>
+                  <strong>Avery Lin</strong>
+                  <span class="muted">Product • Atlas</span>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>“The layout is clean, and the content sections are exactly what we need.”</blockquote>
+              <figcaption>
+                <span class="avatar" aria-hidden="true">SK</span>
+                <div>
+                  <strong>Sam Khan</strong>
+                  <span class="muted">Founder • Helio</span>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>“Dark mode + accessibility out of the box is a win for our users.”</blockquote>
+              <figcaption>
+                <span class="avatar" aria-hidden="true">MR</span>
+                <div>
+                  <strong>Mina Reyes</strong>
+                  <span class="muted">Design • Juniper</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Simple pricing that scales with you.</h2>
+            <p>Replace with your real plans. These are just placeholders.</p>
+          </div>
+
+          <div class="pricing">
+            <article class="price-card">
+              <h3>Starter</h3>
+              <p class="muted">For small experiments</p>
+              <div class="price">
+                <span class="price-amount">$0</span>
+                <span class="muted">/mo</span>
+              </div>
+              <ul class="price-list">
+                <li>1 project</li>
+                <li>Email support</li>
+                <li>Community templates</li>
+              </ul>
+              <a class="btn btn-ghost" href="#lead">Get Starter</a>
+            </article>
+
+            <article class="price-card popular" aria-label="Pro plan (popular)">
+              <div class="badge">Popular</div>
+              <h3>Pro</h3>
+              <p class="muted">For teams shipping weekly</p>
+              <div class="price">
+                <span class="price-amount">$29</span>
+                <span class="muted">/mo</span>
+              </div>
+              <ul class="price-list">
+                <li>Unlimited projects</li>
+                <li>Priority support</li>
+                <li>Team access</li>
+              </ul>
+              <a class="btn btn-primary" href="#lead">Start Pro</a>
+            </article>
+
+            <article class="price-card">
+              <h3>Business</h3>
+              <p class="muted">For larger orgs</p>
+              <div class="price">
+                <span class="price-amount">$99</span>
+                <span class="muted">/mo</span>
+              </div>
+              <ul class="price-list">
+                <li>SLA &amp; onboarding</li>
+                <li>Security reviews</li>
+                <li>Custom components</li>
+              </ul>
+              <a class="btn btn-ghost" href="#lead">Contact sales</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>FAQ</h2>
+            <p>Answers to common questions. Replace with your own.</p>
+          </div>
+
+          <div class="faq">
+            <details class="faq-item" open>
+              <summary>Can I use this as a template for my product?</summary>
+              <div class="faq-body">
+                Yes. It’s just static HTML/CSS/JS. Swap the copy, colors, and sections as needed.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Do I need a build step?</summary>
+              <div class="faq-body">
+                No. Open <code>index.html</code> directly or serve the folder with any static server.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>How does dark mode work?</summary>
+              <div class="faq-body">
+                The toggle sets <code>data-theme</code> on <code>&lt;html&gt;</code> and saves your
+                choice in <code>localStorage</code>.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="lead" class="section">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-copy">
+              <h2>Get the template updates.</h2>
+              <p class="muted">A tiny email form example with basic validation.</p>
+            </div>
+            <form class="cta-form" id="leadForm" novalidate>
+              <label class="sr-only" for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                inputmode="email"
+                autocomplete="email"
+                placeholder="you@company.com"
+                required
+              />
+              <button class="btn btn-primary" type="submit">Notify me</button>
+              <p class="form-hint" id="formHint" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="brand brand-sm">
+            <span class="brand-mark" aria-hidden="true">N</span>
+            <span class="brand-name">Nova</span>
+          </div>
+          <p class="muted">Landing page example. Replace with your brand.</p>
+        </div>
+        <div class="footer-links" aria-label="Footer">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
